@@ -1,30 +1,19 @@
+import './NavBar.css'
 import CartWidget from "../CartWidget/CartWidget";
-import "bulma/css/bulma.css";
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     return (
-        <nav className="navbar has-background-grey-dark" role="navigation" aria-label="main navigation">
-            
-            <div className="navbar-item navbar-start has-text-light">
-                <h3>StreetFlow</h3>
+        <nav className='NavBar'>
+            <Link to="/">
+                <h3 className='Inicio'>FlowStreet clothes</h3>
+            </Link>
+            <div className='Categories'>
+                <NavLink to={`/category/Remeras`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Remeras</NavLink>
+                <NavLink to={`/category/Bermudas`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Bermudas</NavLink>
+                <NavLink to={`/category/Accesorios`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Accesorios</NavLink>
             </div>
-
-            <div className="navbar-menu">
-                <div className="navbar-start">
-                    <a className="navbar-item has-text-light">
-                        Remeras
-                    </a>
-                    <a className="navbar-item has-text-light">
-                        Bermudas
-                    </a> 
-                    <a className="navbar-item has-text-light">
-                        Accesorios
-                    </a>
-                </div>
-            </div>
-            <div className="has-text-light">
-                <CartWidget />
-            </div>
+            <CartWidget />
         </nav>
     )
 }

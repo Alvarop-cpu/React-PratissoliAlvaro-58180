@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.NavBar{
+    max-width: 100%;
+    background-color: gray;
+    color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Option{
+    border-radius: 2px;
+    padding: 15px;
+    background-color: black;
+    color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.Option:hover{
+    background-color: rgb(54, 54, 54);
+}
+.ActiveOption{
+    border-radius: 2px;
+    padding: 15px;
+    background-color: black;
+    color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Inicio{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.Inicio:hover{
+    color: black;
+}
+
+.Categories{
+    display: flex;
+    justify-content: space-around;
+}
+

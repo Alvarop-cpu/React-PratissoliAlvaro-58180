@@ -1,18 +1,21 @@
-import NavBar from "./component/NavBar/NavBar";
+import "./App.css"
+import NavBar from "./component/NavBar/NavBar"
 import ItemListContainer from "./component/ItemListContainer/ItemListContainer";
-import "./App.css";
-import "bulma/css/bulma.css";
+import ItemDetailContainer from "./component/ItemDetailContainer/ItemDetailContainer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      
-      <NavBar />
-
-        <p className="has-text-centered title is-2">
-        <ItemListContainer greeting={"Bienvenidos a StreetFlow"}/>
-        </p>
-
+      <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route className="Button" path="/" element={<ItemListContainer />}/>
+        <Route className="Button" path="/category/:categoryId" element={<ItemListContainer />}/>
+        <Route className="Button" path="/item/:itemId" element={<ItemDetailContainer />}/>
+        <Route path="*" element={<h1>404 NOT FOUND</h1>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

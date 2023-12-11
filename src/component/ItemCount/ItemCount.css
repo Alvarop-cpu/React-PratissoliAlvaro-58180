@@ -1,0 +1,15 @@
+.Controls{
+    text-align: center;
+}
+.Button{
+    margin-top: 5px;
+    justify-content: center;
+    border-radius: 2px;
+    padding: 15px;
+    background-color: black;
+    color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.Button:hover{
+    background-color: rgb(54, 54, 54);
+}
