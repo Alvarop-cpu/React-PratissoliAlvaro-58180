@@ -1,7 +1,12 @@
-
+.CAR{
+    margin: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    position: sticky;
+}
 .CAR2{
     border: solid black 1px;
     border-radius: 2px;
-    padding: 10px ;
+    padding: 12px ;
     background-color: antiquewhite;
 }

@@ -1,9 +1,8 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 .NavBar{
-    max-width: 100%;
     background-color: gray;
     color: aliceblue;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -11,6 +10,7 @@
 
 .Option{
     border-radius: 2px;
+    margin: 20px;
     padding: 15px;
     background-color: black;
     color: aliceblue;
@@ -28,8 +28,8 @@
 }
 
 .Inicio{
-    margin: 20px;
-    padding: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
     text-align: center;
     color: aliceblue;
 }
